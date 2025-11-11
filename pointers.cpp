@@ -4,7 +4,23 @@ using namespace std;
 int main() {
 
     int a = 500;
+    int b = 200;
+
     int  *p;
+
+    //references
+    int &r = b;
+    b = 201;
+    r++;
+
+    int c = 300;
+    r = c;
+
+    cout << r <<endl;
+    cout << b <<endl;
+
+
+    // ----------------- //
 
     int array[5] = {2,4,6,8,10};
     int *q;
@@ -32,7 +48,7 @@ int main() {
 
     // - cpp lang
     delete [ ]p;
-    
+
     // - c lang
     //free(p)
 

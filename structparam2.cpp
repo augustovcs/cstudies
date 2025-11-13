@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-
+#include <array>
 using namespace std;
 
 struct Rectangle {
@@ -23,11 +23,8 @@ void changeLength(struct Rectangle *p, int l) {
 
 void fun(struct test &t1) {
 
-    t1.A[0] = 10;
-    t1.A[1] = 20;
-    t1.A[2] = 30;
+   cin>>t1.A[0]>>t1.n;
 
-    t1.n = 999;
 
 }
 
@@ -42,8 +39,13 @@ int main() {
     changeLength(&r, 20);
     fun(t);
 
-    cout<<r.length<<endl;
-    cout<<t.A[0]<<endl;
+    int lengthA = size(t.A);
+
+    for(int i=0; i<lengthA; i++)
+    cout<<t.A[i]<<endl;
+
+
+    cout<<t.n<<endl;
 
    
 }

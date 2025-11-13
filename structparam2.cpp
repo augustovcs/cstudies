@@ -23,7 +23,10 @@ void changeLength(struct Rectangle *p, int l) {
 
 void fun(struct test &t1) {
 
-   cin>>t1.A[0]>>t1.n;
+
+    cin>>t1.A[0]>>t1.n;
+    t1.A[0]++;
+    t1.n++;
 
 
 }

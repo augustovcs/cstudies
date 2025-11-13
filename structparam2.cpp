@@ -40,8 +40,10 @@ int main() {
     fun(t);
 
     int lengthA = size(t.A);
+    int lengthAvar = sizeof(t.A) / sizeof(t.A[0]); // bytes to elements count
 
-    for(int i=0; i<lengthA; i++)
+
+    for(int i=0; i<lengthAvar; i++)
     cout<<t.A[i]<<endl;
 
 

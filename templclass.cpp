@@ -35,6 +35,7 @@ T Arithmetic<T>::Sub() {
     T c;
     c = a-b;
     return c;
+    
 }
     
 

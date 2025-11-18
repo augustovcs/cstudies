@@ -43,6 +43,7 @@ int main() {
 
     Arithmetic<int> ar(10, 5), ar2(15, 7);
 
+    
     cout << "Add " << ar.Add() << endl;
     cout << "Sub " << ar.Sub() << endl;
 

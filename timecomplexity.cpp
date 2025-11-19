@@ -29,6 +29,16 @@ class OComplexity{
         }
         return s;
     }
+    // this is O(n²)
+    void Add(int n) {
+        int **A, **B, **c;
+        int i, j;
+        for (i = 0; i<n; i++) {
+            for (j = 0; j < n; j++) {
+                c[i][j] = A[i][j] + B[i][j];
+            }
+        }
+    }
 
 };
 

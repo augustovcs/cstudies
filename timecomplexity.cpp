@@ -6,7 +6,15 @@ using namespace std;
 
 
 
-public class 
-void Swap(x ,y) {
-
-}
+class OComplexity{
+    
+    public:
+    void Swap(int x ,int y) {
+        
+        int t; 
+        t = x;
+        x = y;
+        y = t;
+        
+    }
+};

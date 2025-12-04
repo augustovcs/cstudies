@@ -18,9 +18,17 @@ void fun2(int n) {
 if (n > 0) {
     fun2(n-1);	
 	printf("%d", n);
-
+		
 	}
 	
+}
+
+
+void treeRecursion(int n) {
+
+	
+
+
 }
 
 int main() {
@@ -33,3 +41,5 @@ int main() {
     return 0;
 	
 }
+
+

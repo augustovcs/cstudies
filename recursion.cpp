@@ -3,11 +3,13 @@
 
 using namespace std;
 
+
+void fun2(int n); // use quando quiser indirect recursion
 void fun1(int n) {
 	
 if (n > 0) {
 	printf("%d", n);
-	fun1(n-1);	
+	fun2(n-1);	
 	}
 	
 }
@@ -16,7 +18,7 @@ if (n > 0) {
 void fun2(int n) {
 	
 if (n > 0) {
-    fun2(n-1);	
+    fun1(n-1);	
 	printf("%d", n);
 		
 	}
@@ -26,19 +28,45 @@ if (n > 0) {
 
 void treeRecursion(int n) {
 
-	
+	if (n > 0) {
+		printf("%d", n);
+		treeRecursion(n-1);
+		treeRecursion(n-1);
+
+	}
+
+
+}
+
+
+int nestedRecursion(int n) {
+
+	if (n > 10) 
+		return n-1;
+	return nestedRecursion(nestedRecursion(n+20));
+
 
 
 }
 
 int main() {
 
-	int x = 3;
+	int x = 4;
+
     fun1(x);
     cout << "\n"; 
+
     fun2(x);
 
-    return 0;
+	cout << "\n";
+	//treeRecursion(x);
+	cout << "\n";
+
+	int r;
+	r = nestedRecursion(10);
+	printf("%d", r);
+
+	return 0;
 	
 }
 
